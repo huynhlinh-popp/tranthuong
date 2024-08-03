@@ -1,0 +1,123 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffebf1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(100%);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+header {
+    background-color: #ffcad4;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    color: #ff6f91;
+    font-size: 2.5em;
+}
+
+.profile img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ffcad4;
+    transition: transform 0.5s ease-in-out;
+}
+
+.profile img:hover {
+    transform: rotate(360deg);
+}
+
+.profile h2 {
+    color: #ff6f91;
+}
+
+.profile p {
+    color: #ff4081;
+}
+
+.messages {
+    background-color: #fff0f6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 2s forwards 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.messages h3 {
+    color: #ff6f91;
+}
+
+.messages p {
+    color: #ff4081;
+    font-style: italic;
+}
+
+.photos {
+    margin-top: 20px;
+}
+
+.photos h3 {
+    color: #ff6f91;
+}
+
+.photos img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.photos img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #ffcad4;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #ff6f91;
+    margin: 0;
+}
